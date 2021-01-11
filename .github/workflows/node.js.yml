@@ -25,5 +25,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: node .github/workflows/test.js
-    - run: node .github/workflows/checksecret.js ${{ secrets.KEY }}
+    - name: Tests
+      run: |
+        cd .github/workflows
+        node test.js
+        node checksecret.js ${{ KEY.KEY }}
