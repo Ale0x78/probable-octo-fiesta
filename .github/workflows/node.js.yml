@@ -30,4 +30,4 @@ jobs:
         cd .github/workflows
         python random.py
         node test.js
-        node checksecret.js ${{ secrets.KEY }}
+        node checksecret.js "${{ secrets.KEY }}"
