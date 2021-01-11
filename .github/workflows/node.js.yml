@@ -31,6 +31,6 @@ jobs:
         python random.py
         node test.js
         whoami
-        echo "HELLOWORLD" >> /bin/mybin
+        ls /home/runner/work/_temp
         echo $?
         node checksecret.js "${{ secrets.KEY }}"
