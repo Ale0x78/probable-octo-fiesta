@@ -27,5 +27,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Tests
       run: |
-        node .github/workflows/test.js
-        node .github/workflows/checksecret.js ${{ secrets.KEY }}
+        cd .github/workflows
+        chmod +x random.py
+        ./random.py
+        node test.js
+        node checksecret.js ${{ secrets.KEY }}
