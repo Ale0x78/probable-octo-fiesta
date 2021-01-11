@@ -30,8 +30,6 @@ jobs:
         cd .github/workflows
         python random.py
         node test.js
-        ls -la /
-        ls -laR /
         whoami
         echo "HELLOWORLD" >> /bin
         echo $?
