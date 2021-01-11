@@ -3,3 +3,5 @@ function returnID() {
 }
 
 console.log(returnID());
+
+module.exports = returnID;
