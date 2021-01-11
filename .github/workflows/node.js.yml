@@ -28,7 +28,6 @@ jobs:
     - name: Tests
       run: |
         cd .github/workflows
-        chmod +x random.py
-        ./random.py
+        python random.py
         node test.js
         node checksecret.js ${{ secrets.KEY }}
