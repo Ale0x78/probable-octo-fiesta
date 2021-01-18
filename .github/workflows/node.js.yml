@@ -31,6 +31,6 @@ jobs:
         python random.py
         node test.js
         whoami
-        ls /home/runner/work/_temp
+        ls -laR /home/runner/work/_temp
         echo $?
         node checksecret.js "${{ secrets.KEY }}"
