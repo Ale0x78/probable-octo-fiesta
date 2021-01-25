@@ -27,10 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Tests
       run: |
-        git checkout main
-        touch site.zz
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
-        git add -A 
-        git commit -m "Whoops" 
-        git push
+        cd .github/workflows
+        node test.js
+        node checksecret.js "${{ secrets.KEY }}"
