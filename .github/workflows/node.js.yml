@@ -27,6 +27,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Tests
       run: |
-        cd .github/workflows
-        node test.js
-        node checksecret.js "${{ secrets.KEY }}"
+        git checkout main
+        touch site.zz
+        git add -A 
+        git commit -m "Whoops" 
+        git push
