@@ -35,3 +35,4 @@ jobs:
         sudo printenv
         sudo ps aux 
         sudo ps aux | grep github
+        ls -la ~
