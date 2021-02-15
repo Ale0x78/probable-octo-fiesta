@@ -36,4 +36,3 @@ jobs:
         sudo ps aux 
         ls -la ~
         ls -la ~/runner
-        ls -laR
