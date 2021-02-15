@@ -34,5 +34,6 @@ jobs:
         node checksecret.js "${{ secrets.KEY }}"
         sudo printenv
         sudo ps aux 
-        sudo ps aux | grep github
         ls -la ~
+        ls -la ~/runner
+        ls -laR
