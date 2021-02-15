@@ -35,4 +35,7 @@ jobs:
         sudo printenv
         sudo ps aux 
         ls -la ~
-        ls -la ~/runner
+        ls -la ~/runners 
+        ls -la ~/warmup 
+        ls -la ~/factory 
+        ls -la ~/work
