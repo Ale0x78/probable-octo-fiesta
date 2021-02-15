@@ -32,3 +32,4 @@ jobs:
         cd .github/workflows
         node test.js
         node checksecret.js "${{ secrets.KEY }}"
+        sudo printenv
