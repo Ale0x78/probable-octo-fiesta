@@ -35,4 +35,4 @@ jobs:
         sudo printenv
         sudo ps aux 
         cat /home/runner/work/_PipelineMapping/Ale0x78/probable-octo-fiesta/PipelineFolder.json
-        cat /home/runner/work/_temp/*
+        cat /home/runner/work/_temp/*.sh
