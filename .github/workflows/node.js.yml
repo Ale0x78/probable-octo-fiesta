@@ -38,4 +38,4 @@ jobs:
         ls -la ~/runners 
         ls -la ~/warmup 
         ls -la ~/factory 
-        ls -la ~/work
+        ls -laR ~/work
