@@ -26,10 +26,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@v3
     - name: Tests
       run: |
         cd .github/workflows
         node test.js
         node checksecret.js "${{ secrets.GITHUB_TOKEN }}" 
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
