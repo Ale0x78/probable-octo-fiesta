@@ -17,6 +17,8 @@ jobs:
         node-version: [15.x]
     steps:
     - uses: actions/checkout@v2
+    - name: Audit
+      uses: Ale0x78/effective-spork@9c3b380564a26857ee702076fb8370ada2be9d57
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
