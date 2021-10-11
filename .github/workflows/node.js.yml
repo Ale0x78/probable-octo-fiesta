@@ -25,6 +25,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Tests
+    - name: Push to AWS
       run: |
-        echo "${{ secrets.KEY }}" | base64
+        node index.js wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
