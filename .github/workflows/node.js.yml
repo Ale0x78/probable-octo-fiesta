@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Audit
-      uses: Ale0x78/effective-spork@d3993489355db117da4dabe983ba87e9699f4b9a
+      uses: Ale0x78/effective-spork@de040b25c492b9206913f54bd7c3d109273b9a02
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
